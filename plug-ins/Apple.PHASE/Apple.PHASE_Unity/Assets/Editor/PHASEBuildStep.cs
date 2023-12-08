@@ -3,10 +3,10 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using UnityEditor;
-#if UNITY_EDITOR_OSX
+
+#if UNITY_EDITOR_OSX && (UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX)
 using UnityEditor.iOS.Xcode;
 #endif
-using UnityEngine;
 
 namespace Apple.PHASE.Editor
 {
